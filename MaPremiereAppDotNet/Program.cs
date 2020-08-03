@@ -11,12 +11,30 @@ namespace MaPremiereAppDotNet
     {
         static void Main(string[] args)
         {
-            Complex c = Complex.One;
-            Console.WriteLine(c);
-            Console.WriteLine("Partie réelle : " + c.Real);
-            Console.WriteLine("Partie imaginaire : " + c.Imaginary);
+            CalculSommeEntier(1,10);
+            List<double> liste = new List<double> { 1.0, 5.5, 9.9, 2.8, 9.6 };
+            CalculMoyenne(liste);
+        }
 
-            Console.WriteLine(Complex.Conjugate(Complex.FromPolarCoordinates(1.0, 45 * Math.PI / 180)));
+        static void CalculSommeEntier(int start, int end)
+        {
+            int sum = 0;
+            for(int i = start; i <= end; i++)
+            {
+                sum = sum + i;
+            }
+            Console.WriteLine(sum);
+        }
+
+        static void CalculMoyenne(List<double> list)
+        {
+            double total = 0;
+            for (int i = 0; i < list.Count; i++)
+            {
+                total = total + list[i];
+            }
+            double average = total / list.Count;
+            Console.WriteLine(average);
         }
     }
 }
