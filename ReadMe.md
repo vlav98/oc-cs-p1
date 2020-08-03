@@ -42,3 +42,9 @@ Tabulation \t
 |   ||  	| OU logique			|
 |  ! 		| Négation				|
 
+## Listes ou tableau
+
+Tableau = multidimensionnel, taille fixe
+Liste = taille variable
+	- Ajout d'éléments avec Add()
+	- Suppression d'éléments avec Remove()
