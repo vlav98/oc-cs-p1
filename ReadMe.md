@@ -26,5 +26,19 @@ Si l'on fait des additions entre strings, une concaténation aura lieu.
 ## Caractères spéciaux
 
 On utilise \ avant tout caractère spécial dans un string.
-Retour à la ligne \n
+Retour à la ligne \n ou Environment.NewLine
 Tabulation \t
+
+## Opérateurs
+|   Type  	| Description			|
+|:-------:	|:---------------:		|
+|   ==  	| Egalité				|
+|  !=  		| Différence			|
+|   >   	| Supérieur à			|
+|   <  		| Inférieur à			|
+|  >=  		| Supérieur ou égal à	|
+|  <= 		| Inférieur ou égal à	|
+| && 		| ET logique 			|
+|   ||  	| OU logique			|
+|  ! 		| Négation				|
+
