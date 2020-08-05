@@ -87,13 +87,12 @@ namespace MaPremiereAppDotNet
             List<int> multiple3 = new List<int>() ;
             List<int> multiple5 = new List<int>() ;
 
-            for (int i = 3; i <= end; i += 3)
+            for (int i = 1; i <= end; i++)
             {
-                multiple3.Add(i);
-            }
-            for (int i = 5; i <= end; i += 5)
-            {
-                multiple5.Add(i);
+                if (i % 3 == 0)
+                    multiple3.Add(i);
+                if (i % 5 == 0)
+                    multiple5.Add(i);
             }
 
             int total = 0;
